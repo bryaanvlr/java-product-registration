@@ -1,0 +1,155 @@
+JAVA — O QUE APRENDI ATÉ AGORA
+
+1. Estrutura principal
+
+public class Main {
+    public static void main(String[] args) {
+
+    }
+}
+
+public = pode ser acessado de fora da classe
+static = pode ser executado sem criar um objeto
+void = não retorna nenhum valor
+main = ponto onde o programa começa
+
+
+2. Mostrar algo no terminal
+
+System.out.println("Olá");
+
+
+3. Variáveis
+
+String = texto
+int = número inteiro
+double = número decimal
+boolean = true ou false
+
+Exemplos:
+
+String nome = "Bryan";
+int idade = 17;
+double salario = 2500.50;
+boolean ativo = true;
+
+
+4. Concatenação
+
+Serve para juntar texto com variáveis usando +
+
+System.out.println("Nome: " + nome);
+System.out.println("Idade: " + idade + " anos");
+
+
+5. Scanner
+
+Serve para receber informações digitadas pelo usuário.
+
+Importar:
+
+import java.util.Scanner;
+
+Criar:
+
+Scanner scanner = new Scanner(System.in);
+
+
+6. Ler informações
+
+String nome = scanner.nextLine();
+
+int idade = scanner.nextInt();
+
+double salario = scanner.nextDouble();
+
+boolean ativo = scanner.nextBoolean();
+
+
+7. Métodos do Scanner
+
+nextLine() = lê texto
+
+nextInt() = lê número inteiro
+
+nextDouble() = lê número decimal
+
+nextBoolean() = lê true ou false
+
+
+8. Um Scanner pode ler várias informações
+
+Scanner scanner = new Scanner(System.in);
+
+String nome = scanner.nextLine();
+int idade = scanner.nextInt();
+double salario = scanner.nextDouble();
+boolean ativo = scanner.nextBoolean();
+
+
+9. Problema do Enter
+
+Quando uso nextInt(), nextDouble() ou algo parecido e depois quero usar nextLine(), pode ficar um Enter sobrando.
+
+Exemplo:
+
+int idade = scanner.nextInt();
+
+scanner.nextLine();
+
+String setor = scanner.nextLine();
+
+Esse scanner.nextLine() extra limpa o Enter.
+
+
+10. Fechar o Scanner
+
+scanner.close();
+
+Uso quando não vou mais receber dados pelo teclado.
+
+
+11. Boolean
+
+Boolean representa verdadeiro ou falso.
+
+boolean ativo = true;
+boolean bloqueado = false;
+
+Pode ser usado para coisas como:
+
+funcionário ativo
+pagamento aprovado
+produto disponível
+usuário bloqueado
+
+
+12. double e Double
+
+Por enquanto usar:
+
+double preco = 150.50;
+
+double é um tipo primitivo.
+Double é uma classe que vou aprender melhor mais pra frente.
+
+
+13. Já pratiquei
+
+Cadastro de funcionário
+Cadastro de produto
+Cadastro de pedido
+
+Usando:
+
+String
+int
+double
+boolean
+Scanner
+concatenação
+
+
+PRÓXIMO CONTEÚDO:
+
+if e else
